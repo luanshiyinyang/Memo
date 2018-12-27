@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    adroid:orientation="vertical"
+    xmlns:adroid="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    adroid:background="@color/white"
+    adroid:layout_width="match_parent"
+    adroid:layout_height="match_parent">
+    <FrameLayout
+        adroid:layout_width="match_parent"
+        adroid:layout_height="46dp">
+        <include layout="@layout/topbar"></include>
+    </FrameLayout>
+    <RelativeLayout
+        adroid:layout_width="match_parent"
+        adroid:layout_height="match_parent"
+        >
+        <LinearLayout
+            adroid:layout_width="match_parent"
+            adroid:layout_height="match_parent"
+            adroid:layout_centerInParent="true"
+            adroid:orientation="vertical">
+            <include layout="@layout/blank_view"/>
+        </LinearLayout>
+        <com.zc.memo.view.MyScrollView
+            adroid:id="@+id/sv_main"
+            adroid:layout_width="match_parent"
+            adroid:layout_height="wrap_content"
+            adroid:background="@drawable/border_bottom_null">
+            <LinearLayout
+                adroid:layout_width="match_parent"
+                adroid:layout_height="wrap_content"
+                adroid:orientation="vertical">
+                <com.baoyz.swipemenulistview.SwipeMenuListView
+                    adroid:id="@+id/smlv_main"
+                    adroid:layout_width="match_parent"
+                    adroid:layout_height="match_parent"
+                    adroid:descendantFocusability="blocksDescendants"
+                    adroid:divider="@color/little_gray"
+                    adroid:dividerHeight="1dp"
+                    adroid:background="@null"
+                    />
+            </LinearLayout>
+
+        </com.zc.memo.view.MyScrollView>
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
+            adroid:id="@+id/fab_menu"
+            adroid:layout_width="wrap_content"
+            adroid:layout_height="wrap_content"
+            adroid:layout_alignParentRight="true"
+            adroid:layout_alignParentBottom="true"
+            fab:fab_labelStyle="@style/fab_label_style"
+            app:fab_addButtonSize="mini"
+            fab:fab_addButtonColorNormal="#5e96b9"
+            fab:fab_addButtonColorPressed="@null"
+            fab:fab_addButtonPlusIconColor="@color/black"
+            adroid:layout_marginBottom="16dp"
+            adroid:layout_marginRight="16dp">
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                adroid:id="@+id/fab_add"
+                adroid:layout_width="wrap_content"
+                adroid:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/white"
+                fab:fab_colorPressed="@color/green"
+                fab:fab_title="新备忘录"
+                fab:fab_size="mini"
+                fab:fab_icon="@drawable/fab_add" />
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                adroid:id="@+id/fab_exit"
+                adroid:layout_width="wrap_content"
+                adroid:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/white"
+                fab:fab_colorPressed="@color/green"
+                fab:fab_title="退出应用"
+                fab:fab_size="mini"
+                app:fab_icon="@drawable/fab_exit" />
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+    </RelativeLayout>
+</LinearLayout>
+

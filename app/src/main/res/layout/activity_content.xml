@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:adroid="http://schemas.android.com/apk/res/android"
+    adroid:layout_width="match_parent"
+    adroid:layout_height="match_parent"
+    adroid:background="@color/white"
+    adroid:orientation="vertical"
+    >
+    <LinearLayout
+        adroid:id="@+id/title_content"
+        adroid:layout_width="match_parent"
+        adroid:layout_height="wrap_content">
+        <include layout="@layout/topbar"/>
+    </LinearLayout>
+    <LinearLayout
+        adroid:id="@+id/bottom_content"
+        adroid:layout_width="match_parent"
+        adroid:layout_height="wrap_content"
+        adroid:layout_alignParentBottom="true"
+        >
+        <include layout="@layout/bottombar"/>
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        adroid:layout_width="match_parent"
+        adroid:layout_height="match_parent"
+        adroid:orientation="vertical"
+        adroid:layout_below="@+id/title_content"
+        adroid:layout_above="@id/bottom_content"
+        adroid:layout_alignParentLeft="true"
+        adroid:layout_alignParentStart="true">
+        <RelativeLayout
+            adroid:id="@+id/third"
+            adroid:layout_below="@+id/second"
+            adroid:layout_width="match_parent"
+            adroid:layout_height="wrap_content"
+            adroid:layout_marginTop="5dp"
+            adroid:layout_marginBottom="5dp"
+            adroid:layout_marginLeft="10dp"
+            adroid:orientation="horizontal"
+            >
+            <TextView
+                adroid:id="@+id/date_content"
+                adroid:layout_width="wrap_content"
+                adroid:layout_height="wrap_content"
+                adroid:layout_marginTop="5dp"
+                adroid:hint="创建时间"
+                />
+        </RelativeLayout>
+        <EditText
+            adroid:layout_marginTop="14dp"
+            adroid:scrollbars="vertical"
+            adroid:id="@+id/editor"
+            adroid:layout_width="match_parent"
+            adroid:layout_height="match_parent"
+            adroid:gravity="top"
+            />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+

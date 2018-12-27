@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:adroid="http://schemas.android.com/apk/res/android"
+    adroid:id="@+id/blank_view"
+    adroid:layout_width="match_parent"
+    adroid:layout_height="match_parent"
+    adroid:background="@color/wood">
+
+    <TextView
+        adroid:id="@+id/tv_about"
+        adroid:layout_width="wrap_content"
+        adroid:layout_height="wrap_content"
+        adroid:layout_marginTop="200dp"
+        adroid:text="@string/app_name"
+        adroid:textColor="@color/black"
+        adroid:textSize="35sp"
+        adroid:layout_centerHorizontal="true"
+        />
+    <TextView
+        adroid:id="@+id/tv_blank"
+        adroid:layout_width="wrap_content"
+        adroid:layout_height="wrap_content"
+        adroid:layout_below="@+id/tv_about"
+        adroid:layout_marginTop="10dp"
+        adroid:text="@string/app_name"
+        adroid:textColor="@color/gray"
+        adroid:layout_centerHorizontal="true"
+        />
+
+
+
+
+</RelativeLayout>
