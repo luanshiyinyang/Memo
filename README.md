@@ -27,9 +27,9 @@
 - 配置文件
     - 第三方依赖添加
         - 'com.getbase:floatingactionbutton:1.9.0'
-            * 浮动窗口
+            - 浮动窗口
         - 'com.quinny898.library.persistentsearch:library:1.1.0-SNAPSHOT'
-            * 搜索框
+            - 搜索框
         	- 'com.baoyz.swipemenulistview:library:1.3.0'
 - 不完善之处
 	- 本app的开发参考几个开源项目的理念和代码设计
