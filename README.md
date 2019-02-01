@@ -25,12 +25,12 @@
 	- 采用敏捷开发策略
 	- 采用快速原型开发方式（优先完成基础功能，再进一步优化）
 - 配置文件
-    - 第三方依赖添加
-        - 'com.getbase:floatingactionbutton:1.9.0'
-            - 浮动窗口
-        - 'com.quinny898.library.persistentsearch:library:1.1.0-SNAPSHOT'
-            - 搜索框
-        	- 'com.baoyz.swipemenulistview:library:1.3.0'
+	- 第三方依赖添加
+		- 'com.getbase:floatingactionbutton:1.9.0'
+			- 浮动窗口
+		- 'com.quinny898.library.persistentsearch:library:1.1.0-SNAPSHOT'
+			- 搜索框
+		- 'com.baoyz.swipemenulistview:library:1.3.0'
 - 不完善之处
 	- 本app的开发参考几个开源项目的理念和代码设计
 	- 首页每一项之间预先构想的排序，最后由于时间没有实现
